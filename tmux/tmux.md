@@ -1,6 +1,5 @@
-# Top 50 Most Used Tmux Commands
+# Most Used Tmux Commands
 
-Tmux is a powerful terminal multiplexer that allows you to create, manage, and navigate multiple terminal sessions. Below are the **50 most commonly used tmux commands**, organized for easy reference.
 
 ## 1. Starting and Attaching Sessions
 - `tmux` – Start a new tmux session  

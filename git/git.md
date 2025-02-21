@@ -71,6 +71,3 @@
 - `git show <tag_name>` – Show details of a tag  
 
 ---
-
-This list covers **the top 50 essential Git commands** that you’ll use regularly. 🚀  
-For more advanced Git usage, explore **Git rebase, interactive commits, and hooks**.
