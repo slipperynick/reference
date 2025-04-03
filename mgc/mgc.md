@@ -1,7 +1,5 @@
 # Microsoft Graph CLI (`mgc`) Commands
 
-The **Microsoft Graph CLI (`mgc`)** allows you to interact with **Microsoft Graph APIs** from the command line. Below are commonly used commands.
-
 ---
 
 ## 📂 **Resources**
@@ -33,7 +31,3 @@ The **Microsoft Graph CLI (`mgc`)** allows you to interact with **Microsoft Grap
 
 ---
 
-### **✅ Summary**
-This list provides essential **Microsoft Graph CLI (`mgc`) commands** for authentication, user management, and device management.  
-
-For more details, visit the [official GitHub repository](https://github.com/microsoftgraph/msgraph-cli). 🚀

@@ -152,3 +152,81 @@ This **CKA exam cheat sheet** covers **core Kubernetes administration tasks** in
 - **Networking & Storage**
 - **Helm & Autoscaling**
 
+
+
+## `kubectl patch` 
+- Update a Kubernetes resource by applying a partial update to its configuration. 
+
+
+## `kubectl rollout restart`
+- **Restarts** a Deployment, StatefulSet, or DaemonSet **without downtime**.
+- **Triggers a rolling restart** by updating the **Pod template hash**.
+- **Useful for**:
+  - Applying changes to **environment variables**.
+  - Updating **ConfigMaps** or **Secrets** without deleting Pods.
+  - Restarting applications **gracefully**.
+
+
+## `kubectl drain`
+- Purpose: Evacuates all workloads from a node before maintenance (e.g., upgrades, scaling, or decommissioning).
+- How it Works:
+  - Cordons the node (prevents scheduling new pods).
+  - Evicts running pods from the node (if controlled by a ReplicaSet, StatefulSet, etc.).
+  - Taints the node (optional, for preventing rescheduling).
+  - e.g. `kubectl drain my-node --ignore-daemonsets --delete-emptydir-data`
+
+
+## `kubectl uncordon`
+-  Purpose: Re-enables scheduling on a node after it was drained.
+- How it Works:
+  - reverses the kubectl drain operation.
+  - Removes the cordon (which marks the node as unschedulable).
+  - Allows new pods to be scheduled on the node.
+
+
+## `kubectl rollout undo`
+- Rolls back a Deployment, StatefulSet, or DaemonSet to its previous version.
+- e.g `kubectl rollout undo deployment web-app`
+
+## `kubectl delete pod`
+- Deletes a pod immediately, but it will be replaced if managed by a controller (e.g., Deployment).
+
+## `kubectl create job example-job --image=busybox -- echo "Hello, Kubernetes!"`
+- create a job that says hello, kubernetes with image busybox
+
+## Question and answer
+- What is a headless service?
+  - A headless service is a Kubernetes Service without a cluster IP. Instead of load balancing traffic, it directly returns the IP addresses of the backing pods
+
+- What is a stateful set vs a deployment
+  - statefulsets manage stateful apps (databases, message queues).
+  - deployments manages stateless apps (web servers, APIs).
+
+
+- What is the difference between a Persistent Volume (PV) and a Persistent Volume Claim (PVC)?
+  - PV represents actual storage available in the cluster (disk, NFS, cloud storage).
+  - PVC is a request for storage made by a pod.
+
+- What is a StorageClass in Kubernetes?
+  - A StorageClass in Kubernetes defines how storage is dynamically provisioned for Persistent Volumes (PVs). It allows admins to set up different types of storage backends (e.g., SSD, HDD, cloud storage) and lets developers request storage without worrying about the underlying infrastructure.
+
+- What is a NodeSelector, and how does it help in Kubernetes scheduling?
+  - A NodeSelector is a simple way to schedule pods onto specific nodes based on labels. It restricts a pod to run only on nodes that match a specified label.
+  - NodeSelector uses labels to match pods to nodes.
+  - e.g. `kubectl label nodes node-1 disktype=ssd`
+
+- What is Node Affinity, and how does it improve scheduling over NodeSelector?
+  - Node Affinity is a more advanced and flexible way to schedule pods onto specific nodes compared to NodeSelector.
+  - Supports: ✔️ "Hard" rules (requiredDuringSchedulingIgnoredDuringExecution), "Soft" rules (preferredDuringSchedulingIgnoredDuringExecution)
+
+
+- What is a Pod Disruption Budget (PDB), and why is it useful in Kubernetes?
+  - A Pod Disruption Budget (PDB) helps limit the number of pods that can be disrupted (voluntarily evicted) at the same time due to maintenance tasks, like node upgrades or scaling events.
+
+- What is a Kubernetes Job, and how is it different from a Deployment?
+  - A Kubernetes Job runs a task to completion, while a Deployment manages long-running applications.
+
+- What is a CronJob, and how is it different from a Job?
+  - A Job runs once and completes, while a CronJob runs on a schedule.
+
+- 

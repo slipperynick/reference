@@ -1,0 +1,10 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: fast-storage
+provisioner: kubernetes.io/aws-ebs  # Example for AWS Elastic Block Store
+parameters:
+  type: gp3  # General Purpose SSD
+  iopsPerGB: "50"
+  encrypted: "true"
+reclaimPolicy: Retain

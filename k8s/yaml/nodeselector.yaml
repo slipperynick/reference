@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-app
+spec:
+  nodeSelector:
+    disktype: ssd  # This pod will only run on nodes labeled 'disktype=ssd'
+  containers:
+    - name: my-container
+      image: nginx

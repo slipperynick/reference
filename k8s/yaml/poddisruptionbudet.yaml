@@ -1,0 +1,9 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: my-app-pdb
+spec:
+  minAvailable: 2  # At least 2 pods must always be available
+  selector:
+    matchLabels:
+      app: my-app

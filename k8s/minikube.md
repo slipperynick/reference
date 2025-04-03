@@ -142,5 +142,3 @@
 - **View Helm Chart Values**  
   `helm show values <chart-name>`
 
-## Summary
-This **Minikube and Kubernetes command reference** provides essential commands for **managing clusters, debugging, networking, backups, and Helm**. 🚀 Copy and paste this into your Markdown file for easy reference.

@@ -1,6 +1,5 @@
 # Most Used GitHub CLI (`gh`) Commands
 
-The GitHub CLI (`gh`) provides an easy way to interact with GitHub from the command line. Below are the **50 most commonly used GitHub CLI commands**, organized for easy 
 
 ## 1. Authentication and Setup
 - `gh auth login` – Log in to GitHub CLI  

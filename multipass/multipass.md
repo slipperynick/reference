@@ -60,5 +60,3 @@
 - **List Aliases for Commonly Used Commands**  
   `multipass aliases`
 
-## Summary
-This **Multipass command reference** provides essential commands for **managing instances, transferring files, networking, and configurations** in a **single Markdown entry** for easy copy-pasting.

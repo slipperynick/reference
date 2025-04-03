@@ -142,5 +142,3 @@
 - `find / -type f -name "*.conf"` – Find all configuration files.
 
 ---
-
-This Markdown file provides an **extensive command-line reference** with structured categories, making it easier to locate relevant commands quickly.
