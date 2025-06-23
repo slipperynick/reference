@@ -111,3 +111,5 @@ This document lists **essential macOS terminal commands**, grouped by category.
 - `exit` – Close the terminal session  
 
 ---
+## 10. Utils
+- `bat` - A updated and more feature rich version of cat

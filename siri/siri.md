@@ -188,4 +188,3 @@
 - **"When do the Philadelphia Eagles play next?"**  
 - **"Show me career statistics for Peyton Manning."**  
 
-🚀 **Now you have a complete Siri command reference in a single Markdown file!** 🎯
