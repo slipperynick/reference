@@ -16,3 +16,6 @@
 - **Open Quick Chat**: `Ctrl + Shift + Alt + L` (Windows/Linux) or `Control + Shift + Option + L` (Mac)
 - **Open Copilot Edits View**: `Ctrl + Shift + I` (Windows/Linux) or `Command + Shift + I` (Mac)
 - **Toggle Sidebar**: `Ctrl + Shift + A` (Windows/Linux) or `Control + Shift + A` (Mac)
+
+## Github Copilot  CLI
+- gh copilot suggest "how do i list files in long format"

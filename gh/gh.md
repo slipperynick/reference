@@ -67,6 +67,3 @@
 - `gh run rerun <run-id>` – Re-run a failed workflow  
 
 ---
-
-### **Summary**
-This list covers **the top 50 essential GitHub CLI (`gh`) commands** that you'll use regularly. 🚀  

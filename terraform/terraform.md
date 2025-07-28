@@ -1,4 +1,4 @@
-# 🌱 Top 50 Terraform Commands - Quick Reference
+# 🌱 Terraform - Quick reference
 
 ## 🔧 Initialization & Setup
 - `terraform init` — Initialize a working directory.

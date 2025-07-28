@@ -194,7 +194,17 @@ This **CKA exam cheat sheet** covers **core Kubernetes administration tasks** in
 ## `kubectl create job example-job --image=busybox -- echo "Hello, Kubernetes!"`
 - create a job that says hello, kubernetes with image busybox
 
-## Question and answer
+## `kubectl get priorityclass`
+- get the priority classes currently in use by the cluster
+
+
+kubectl get priorityclass [name] -o yaml
+check for details of priority class
+
+
+
+
+## Q&A
 - What is a headless service?
   - A headless service is a Kubernetes Service without a cluster IP. Instead of load balancing traffic, it directly returns the IP addresses of the backing pods
 
@@ -229,4 +239,10 @@ This **CKA exam cheat sheet** covers **core Kubernetes administration tasks** in
 - What is a CronJob, and how is it different from a Job?
   - A Job runs once and completes, while a CronJob runs on a schedule.
 
-- 
+- What is a PriorityClass
+
+- What is difference between node port, target port and port?
+	-	port: The entry point into the Service.
+	-	targetPort: The actual container port in the Pod.
+	-	nodePort: The external port on the Node’s IP (optional, only for external access).
+  - You (External) → NodeIP:nodePort → Service (port) → Pod IP:targetPort
